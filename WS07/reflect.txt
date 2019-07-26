@@ -1,0 +1,24 @@
+1) When I was doing this workshop, I learned how to make a derived class and how to design functions base on the base class. Such as I just need to initislize
+    the derived class data member, becuase in default constructor, it would automaticlly call the default constructor of base class. And I can use 
+    "SuperHero(const char* n_, int h_, int s_, int b_, int d_):Hero(n_, h_, s_)" to prevent duplicate coding. Also I can use key word "protected" on the private data
+    member of the base class which would allow the derived class could use private data member of its base class.
+    I met two difficulties. One is how to make a damage to a superhero, I  made a member funcition called "attacked" to calculate and reset the health  of the 
+    superhero.  The second difficulty is how to make the code could accept hero and superhero fight. At first I try to make a check function to differentiate the
+    object is hero or superhero. But when I look the lecture notes and lecture code, I found that if I combined virtual function and polymorphic function, I could
+   make the function refer to any object in the hero-superhero hierarchy , and according to the object's pointer type, it could call different function.
+2)Does the Hero class need to know about the existence of the SuperHero class? (Hint: do a search in Hero.cpp, does the word ¡°SuperHero¡± appear 
+anywhere?) 
+   The Hero class doesn't need to know the existence of the SuperHero class because it is the base class.
+3)Does the SuperHero class need to know about the existence of the Hero class? (Hint: do a search in SuperHero.cpp, does the word ¡°Hero¡± appear 
+anywhere?)
+   The SuperHero class need to know about the existence of the hero clss because SuperHero calss is a derived class of hero class and we need to use Hero 
+class's data member and member function in our derived SuperHero class.
+4)The program prints out ¡°Ancient Battle!¡± when 2 Heroes fight. It prints out ¡°Super Fight!¡± when 2 SuperHeroes fight. When you tried to make a Hero 
+fight a SuperHero, what did it print out?
+    When I tried to make a Hero fight a SuperHero, it print out ¡°Ancient Battle!¡°.
+5)quiz 6 reflection
+    In the quiz 6, I made a mistake at the question 2. My answer was that one problem of not overloading assignment operator was we need to check if 
+    self-assignment.
+    This is not right because it is not a problem but a way of designing assignment operator function. The problem should be shalow copying. Because if we 
+    use "=" to assign one object to another, we just shalow copy those data member's value. if the the value is an address, then we would have two variable hold
+    same address. It is not safe, because  we might change the data value by accident. So we need to overload assignment operator to do the deep copy.

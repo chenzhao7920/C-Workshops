@@ -1,0 +1,32 @@
+1)When we allocate an array of dynamically allocated memory, the address of each array elements should be sequential, then we could use pointer array to access 
+  the 
+values of each array element. Also when we create a dynamic memory, this part of memory should be empty and the size of it is fixed. When we need a bigger 
+  memory storage size, we can't just increase the size from the beginning address of the existing array, because we don't know for sure if the afterward addresses are
+  empty or big enough. If it is not, then the program would go wrong. Therefore, the best way is to allocate new dynamic memory, because the computer would find
+  an empty and big enough addresses for the new dynamic memory.  We should not allocate new memory for the new elements because that would be a totally
+  different address, so we need a new pointer, then we will have two pointers to access two arrays, which would increase the difficulty in programming. 
+
+
+
+2) pPhones is a pointer to CellPhone structure when we write"pPhones = new CellPhone[count] we allocate  dynamic memory for an array of CellPhone struct and 
+
+   the size of this array is equal to 'count'. Which also means the dynamic memory was divided to 'count' parts and each part includes the CellPhone struct's member
+  including the cellPhone model and price. Because the dynamic memory is sequentially allocated when we write "delete [] pPhones", means we have set free a
+   
+  sequence of dynamically allocated memory which use to store an array of CellPhone struct.  We don't need to use delete operator on the member belong to
+  
+  CellPhone struct, because we have already set that part of memory free.
+
+
+
+3)The parameter of each display() function are different. The compiler could differentiate the parameter type and  order of the overloading display() functions and 
+ then it would call them differently in the main function.
+
+ 
+
+4)quiz2 reflection.
+   
+  In the quiz2, I got wrong at the second question "what is passed by reference". What I wrote was the origin variable was passed. After reading the notes and 
+  asking the professor for clear, I understand that it is the address of the variable in the client function has been passed to the function, not the value. It is because 
+  we can change the value of the original variable inside the function, but we can't change the address of this variable.ginal variable inside the function, but we
+  can't change the address of this variable. 

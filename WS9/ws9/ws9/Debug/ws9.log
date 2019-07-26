@@ -1,0 +1,7 @@
+﻿  Data.cpp
+d:\seneca\第二学期\oop244\oop-workshops\ws9\ws9\ws9\data.cpp(88): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\seneca\第二学期\oop244\oop-workshops\ws9\ws9\ws9\data.cpp(88): error C2146: syntax error: missing ';' before identifier 'max'
+d:\seneca\第二学期\oop244\oop-workshops\ws9\ws9\ws9\data.cpp(88): error C2143: syntax error: missing ';' before '{'
+d:\seneca\第二学期\oop244\oop-workshops\ws9\ws9\ws9\data.cpp(88): error C2447: '{': missing function header (old-style formal list?)
+  w9_lab.cpp
+  Generating Code...

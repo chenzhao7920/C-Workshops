@@ -1,0 +1,16 @@
+1) Safe empty state is a default state defined by the programmer. It is used to initialize objects with some well-defined values.
+
+    We could define another state as the safe empty state because in our code, we might our objects have different default 
+    values when it in some specific state. Then we could set more than one safe empty state when the object in a different state.
+
+2) When I want to use the same logic of my existed member function in my new member function, I try to use the existed 
+    member function
+ instead of writing the same code. In this case, I use *this which represent the current object to store the
+    value which comes from calling the existed function such as Traveler() and Traveler(const char*, const char*, const char*). 
+   In this way, I could change the current object's values in my old logic very quickly without typing too much the same code.   
+
+3) The canTravelWith() member function has a "const Traveler&" parameter. It means this function's parameter is passed by 
+   reference, 
+which means the argument here is an object of Traveler class from the client's code but with a different name, 
+   so this object's every private data also pass to this function.      
+    

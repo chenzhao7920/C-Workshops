@@ -1,0 +1,51 @@
+1, The purpose of namespaces and header files;
+  
+
+The purpose of namespaces is that when many programmers design a program together and they may use
+  same identifier name, that may lead to problems. 
+
+By using namespaces, programmers are free to use any identifiers in their own namespace. so when the client code calls these identifiers, they could 
+ use "::" 
+to 
+make the computer clear which namespace the identifier comes from, then the client code
+  would not confuse the meaning. 
+
+ 
+
+The header files usually consist of prototypes of functions. In C++, we will design different modules
+  and give each module it's own header file. Sometimes
+one
+ module want to use a function in another module,
+  by including other modules' header file, this module's .cpp code they could access and use functions 
+ 
+in other
+ modules.
+
+2, Why header files should not be compiled;
+ 
+ 
+Because header files would be included in many .cpp files and If header files could be compiled, then
+  this code would be compiled at the beginning of those
+ .cpp
+ files being compiled which will lead to problems. For example, if we make a function definition inside the header file then it could appear warning for multiple 
+definitions. So we only could put global variables, class and function prototypes. 
+
+
+
+
+
+3, Why you should never include .cpp files in another file.
+  
+
+Because it could violate one definition rule. When include one .cpp files in other file, what function or variables had been defined in this file, if there are called in
+the caller file, then the compiler would meet duplicate definition and make warnings. So we should never include .cpp files in another file.
+ 
+4,Quiz 1 Reflection
+  In the quiz 1, 
+I was wrong with the first question "What is the purpose of namespaces". I have already
+  gave my new answer at the 
+the beginning of this reflection.  
+
+
+
+

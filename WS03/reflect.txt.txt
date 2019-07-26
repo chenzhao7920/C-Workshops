@@ -1,0 +1,26 @@
+1)In this work shop, I learned many things. The first one is how to make an empty state. The idea is using one data
+   member and a specific value, if the data member holding that specific value then the object would be set to an empty
+   state. The second is how to use ostream public member functions including  fill(), width(), setf(),unsetf(). The third one
+   is how to debugging my code. When I doing this work shop, I come across two difficulties, the first one is how to code
+   to check the validity of ISBN number.  I don't know how to change a longlong int number to 13 digit so I can calculate
+   these digit separately. So I went to learning center and got the logic of it. But after that, I still cannot store the 
+   information of the ten books. So I use Visual Studio debug modules to check why my code didn't work. I use a lot of
+   time to figure out how to use that debugging function, but I think that was really worthy, becuase I found where my
+   code got wrong. I changed the isbn value by calculation so I need to create a variable to store the original value.
+ 2) my ISBN tyoe is long long int because my computer consider 13 digit number as long long int. if I didn't use that type
+   I will lost data.
+ 3)In the class, I could create an overloading member function also name it as set, but I should give it different function 
+   signature. then the compiler would differentiate the functions by identifying  the function's signature and I don't 
+   need to change my old set() member function.
+ 4)quiz 3 reflection
+    I got three mistakes in last quiz. 
+    The first one is what is encapsulation. I said it is encapsulate member data and member function to one class. I got
+    half grade because it not necessarily a class, the quite answer should be that encapsulation is a structure which
+    combine data member and member function together.  
+    The second one is what is the main difference of c++ member function and c function. The answer is c++ member 
+    function could manipulates current objects but c function can only used in main code.
+    The last one is what is a well designed class, my answer was it is low couple outside, high coorparative inside. But the
+    quite answer should be a good class should hide the implementation details from its client's code and only has a clean
+    interface between the class and clients code.
+   
+ 

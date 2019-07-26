@@ -1,0 +1,16 @@
+﻿  Book.cpp
+d:\seneca\第二学期\oop244\oop-workshops\ws03\in-lab\w3\w3\book.cpp(10): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(338): note: see declaration of 'strncpy'
+d:\seneca\第二学期\oop244\oop-workshops\ws03\in-lab\w3\w3\book.cpp(11): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(338): note: see declaration of 'strncpy'
+d:\seneca\第二学期\oop244\oop-workshops\ws03\in-lab\w3\w3\book.cpp(12): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(338): note: see declaration of 'strncpy'
+d:\seneca\第二学期\oop244\oop-workshops\ws03\in-lab\w3\w3\book.cpp(17): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: see declaration of 'strcpy'
+d:\seneca\第二学期\oop244\oop-workshops\ws03\in-lab\w3\w3\book.cpp(18): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: see declaration of 'strcpy'
+d:\seneca\第二学期\oop244\oop-workshops\ws03\in-lab\w3\w3\book.cpp(19): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: see declaration of 'strcpy'
+  w3_in_lab.cpp
+  Generating Code...
+  w3.vcxproj -> D:\seneca\第二学期\OOP244\OOP-Workshops\WS03\in-lab\w3\Debug\w3.exe

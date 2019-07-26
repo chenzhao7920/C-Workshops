@@ -1,0 +1,8 @@
+﻿  Contact.cpp
+d:\seneca\第二学期\oop244\oop-workshops\ws06\ws6_home\ws6_home\contact.cpp(23): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(338): note: see declaration of 'strncpy'
+d:\seneca\第二学期\oop244\oop-workshops\ws06\ws6_home\ws6_home\contact.cpp(34): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(338): note: see declaration of 'strncpy'
+d:\seneca\第二学期\oop244\oop-workshops\ws06\ws6_home\ws6_home\contact.cpp(124): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(338): note: see declaration of 'strncpy'
+  ws6_home.vcxproj -> D:\seneca\第二学期\OOP244\OOP-Workshops\WS06\ws6_home\Debug\ws6_home.exe

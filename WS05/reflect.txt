@@ -1,0 +1,45 @@
+1£©What I have learned
+     In this workshop, l learned many concepts. The first one is how the 'const' works in the function. If the const was placed inside the "( )",
+it means
+ the parameter which connected with the "const" is a const value, we can't change this parameter through this function. If the const
+was outside 
+the "( )" and at the end of the prototype, it means the current object of this function is a  const value, we can't change the current
+object through 
+this function. The second concept that I learn is when we overloading an operator, we need to copy the logic of the original operator. That means 
+we need to be careful of the return value, should it be a copy of the calculational result or should it be the reference of this result. When I do this 
+workshop, I met one difficulty that how to give the constructor a  well-defined safe empty state. At first, I set numerator
+as 0 and denominator as 
+1, although the output was qualified, when I testing some other fraction objects, I found my logic error that a fraction
+should accept 0/1 as a valid 
+fraction number. And then I found that 0/1 is not a good safe empty state because it is a valid fraction value. Therefore,
+I changed my safe empty 
+state to 0/0, and every calculation error had been corrected.
+
+2)  The operator "+" returns a Fraction object because of the original logic of + is return the result of adding two number and two operant do 
+not 
+change in this process. So we should make a Fraction object to store the value of the result and return this fraction object. But on the other hand,
+
+the operator "+=" return a reference to Fraction object because of the original logic of "+=" would change the value of left operand to the result of 
+adding left and right operands. For example, "b+=a" means "b=b+a". The return value is the left operator, but the left operator has a new value 
+of 
+adding another number to itself. In this case, we use a reference to the Fraction object and not use const at the end of the function prototype to 
+indicate we will change the current object of this function and return the current object. make the logic of our overling "+=" operator consist with 
+its original
+logic on the operants of fundamental types. 
+
+3) I made some Fraction objects when I testing my logic. Such as 0/1, 0/3 and 3/0. I use 0/1, 0/3 to see if my functions could accept this kind of 
+fraction
+numbers and to test other operators checking the output if it consists of the fraction calculation logic. I used 3/0 to test if it can be recognized 
+as an
+invalid faction number. I also tested constructor and destructor to see the objects go into the constructor as the order of they show up in the 
+main
+code, and they are in the destructor function in the reverse order.
+
+4)In the Fraction Class, I used four private member functions max( ), min( ), reduce( ) and gcd( ) and a public member function isEmpty( ) to minimize 
+the
+duplicated coding.  I can use them in my other member function and make the code simpler and more readable. Also, I use reduce( ) function in 
+the two parameters 
+constructor, so the Fraction objects would be reduced as soon as they were made out and their number is valid. By dong so, I don't 
+need to reduce each fraction number inside other 
+function, save a lot of duplicate coding.
+ 

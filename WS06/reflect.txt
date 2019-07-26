@@ -1,0 +1,11 @@
+1)The copy assignment operator copies the content of one object to the current object. We should check if 
+   the current object is equal to the current object, because, in this function, we are allocating new dynamic
+   memory for the current object, before that, we should delete the old memory, if source object equal to current
+   object, then we will delete the source content and  lost source content, and the code's output would be wrong.
+2) In my copy constructor, I must initialize my current object's pointer data member as "nullptr", this is to protect
+   my code.  because if my pointer accidentally points to an address of the source object, then the code would not 
+   copy the content of the source object.
+3) If the parameter of the copy constructor is not sent by reference, the compiler would give a warning saying that
+   it may have no parameter of Contact type. The reason is that If an object is passed as value to the Copy the
+   Constructor then its copy constructor would call itself, to copy the actual parameter to the formal parameter.
+   Then there will be an endless loop in this function.

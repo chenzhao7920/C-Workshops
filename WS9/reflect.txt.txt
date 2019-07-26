@@ -1,0 +1,14 @@
+1) In this workshop, I learned how to code and call a template function and understand  we
+   should put the template function in the header file. When I was doing this workshop, I met two
+     problems, one is I put implementation code in the .cpp file and that didn't work, another is I didn't
+     know we need to declare "template <typename T>" before every template function. 
+2) If I try to put template functions in Data.cpp, if I  include the "template <typename T>" before
+   the function then it would be compiled but if without the "template <typename T>" these compilers could not recognize those T type identifiers. If I move template functions to Data.h,
+   the compiler would recognize each T type identifier and works well.
+3) When I move template function into ws9_lab.cpp, if I put it before main(), then it works, but 
+   inside the main() or after the main(), it didn't. So that means we need to define the template function before main() use it.
+4) we can do that but then we need to code two functions which have identical function structure
+   and the only difference is their parameter's type. The advantage of using templates is saving coding time and make a function  polymorphism.
+5) If using template<class T>, the T could be a compound type or primary type but using
+    template<class T>, the T only could be a primary type.
+6)I learned another way to code a polymorphism function.

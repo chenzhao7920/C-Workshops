@@ -1,0 +1,21 @@
+1) In this workshop 8, I leand how to declare virtual function and how to make the abstract base class and concrete class,
+   how to inherit the functions from parent class and how to make the polymorphism globle fuction base on the hierachy 
+   that we design.   
+   When I doing this workshop, I had trouble when I code the "CreateAccount" function of "Allocator.cpp". At first, I didn't 
+  know how to make a container to store a new object. Then I lookthrough the notes and lectures , I found that I can use
+  a pointer to the base class type and then store every objects in the hierachy of this base class. I also found that the 
+  "ifndef.....define....endif" safe code is really important and necessary. I forgot to include them and that made my code 
+   didn't work. I check this bug for a long time.
+2) The difference between an abstract base class and a concrete class is that the abstract class has not define and 
+   implement each virtual function of its base class , so an abstract class cannot make a real object of its class. 
+   But a concrete class define and implement every virtual functions of its base class so it can make a real object. 
+3) Every Class automaticly has a destructor, even if we didn't write it in our class declarations but compiler would generate a empty 
+   destructor for every class. We need a virtual destructor because we need to make the compiler could use destructor
+  of its class, then when the object is out of scope, it would destruct the object in the way in of its own class not in the
+  way of its bass calss.
+4) In a hierachy of classes, overlading means two or more functions have the same identifier but their signatures are 
+   different, then the same function identifier could invleve different logic and different implematations. Override means
+   the child class has the same function signatures but this function beblong to the child class, so for the base class, this 
+   function had been override by its child class. Shadowing means when we use key word "virtual" on an base class 
+   function and this function is override by its child class and when the client code call the function on the child calss 
+   object then ths function would call from the child class and then we say the function in the base class is shadowed.  
